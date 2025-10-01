@@ -1,0 +1,12 @@
+:root {
+    --neotech: #1e90ff;
+    --price-neotech: #a6d3ff;
+}
+
+.harga {
+    background-color: var(--price-neotech);
+}
+
+.neotech {
+    background-color: var(--neotech);
+}
