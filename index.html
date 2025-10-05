@@ -1,218 +1,439 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NeoTech</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- header -->
-     <header>
-        <nav class="navbar navbar-expand-lg bg-primary">
-             <div class="container-fluid">
-                <a class="navbar-brand text-bg-primary" href="">NeoTech</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link text-bg-primary" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-bg-primary" href="#">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-bg-primary" href="#">Service</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-bg-primary" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-             </div>
-        </nav>
-     </header>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg neo-nav fixed-top fw-bold" data-aos="slide-down" style="border-bottom: 1px solid #1e90ff">
+        <div class="container">
+          <a class="navbar-brand neo-text-dark" href="#">NeoTech</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link neo-text-dark" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link neo-text-dark" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link neo-text-dark" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link neo-text-dark" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link neo-text-dark" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-     <section class="m-5">
-        <div class="container-fluid position-relative">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1 class="fw-bold">Website dan Aplikasi Profesional untuk Kebutuhan Bisnis Anda</h1>
-                    <p>Transformasikan ide bisnis Anda menjadi website dan aplikasi yang fongsional dan mudah digunakan</p>
+    <main class="main">
+      <section id="hero" class="hero-neo">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 ps-5">
+              <div class="hero-text" data-aos="fade-right">
+                <div class="neo-badge mb-3 text-center fw-bold">
+                  <i class="bi bi-award-fill"></i>
+                  <span>Bangun Dunia Digitalmu</span>
                 </div>
-                <div class="col-md-6">
-                    <img class="rounded mx-auto d-block img-fluid h-100" src="img/images (1).webp" alt="">
-                </div>
-            </div>
-        </div>
-     </section>
-     <section class="m-5">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="">Produk</h2>
-                    <div class="d-flex justify-content-around flex-wrap gap-5 mt-5">
-                        <a class="btn btn-primary h-50" style="min-width: 200px;" href="">Website</a>
-                        <a class="btn btn-primary h-50" style="min-width: 200px;" href="">Aplikasi</a>
-                        <a class="btn btn-primary h-50" style="min-width: 200px;" href="">Desain</a>
-                        <a class="btn btn-primary h-50" style="min-width: 200px;" href="">SEO</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-     <section>
-        <div class="container-fluid">
-            <h2 class="text-center">Keunggulan</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card h-100 text-bg-primary">
-                        <div class="card-body">
-                            <h3 class="card-title">Meningkatkan Efisiensi Bisnis</h3>
-                            <p class="card-text">Website dan aplikasi yang kami buat membantu operasional lebih cepat dan mudah.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 text-bg-primary">
-                        <div class="card-body">
-                            <h3 class="card-title">Meningkatkan Visibiltas Online</h3>
-                            <p class="card-text">Solusi digital kami membuat bisnis Anda lebih mudah ditemukan oleh calon pelanggan.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 text-bg-primary">
-                        <div class="card-body">
-                            <h3 class="card-title">Hemat Waktu dan Biaya</h3>
-                            <p class="card-text">Sistem yang terintegrasi mengurangi pekerjaan manual dan biaya operasional.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 text-bg-primary">
-                        <div class="card-body">
-                            <h3 class="card-title">Solusi yang Sesuai Kebutuhan</h3>
-                            <p class="card-text">Layanan disesuaikan dengan jenis bisnis dan target pasar Anda.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-     
-     <section class="m-5">
-        <div class="container-fluid">
-            <h2>NeoTech</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Neotech adalah penyedia layanan digital profesional yang fokus membantu bisnis berkembang melalui website, aplikasi, dan solusi teknologi lainnya. Kami menghadirkan layanan berkualitas, efisien, dan disesuaikan dengan kebutuhan setiap klien</p>
-                    <a class="btn btn-primary" href="">Hubungi Kami</a>
-                </div>
-                <div class="col-md-6">
-                    <img class="rounded mx-auto d-block h-100 img-fluid" src="img/images (1).webp" alt="">
-                </div>
-            </div>
-        </div>
-     </section>
 
-     <section class="mb-5">
-        <div class="container-fluid">
-            <h2 class="text-center mb-5">Harga</h2>
-            <div class="row justify-content-center g-4">
-                <div class="col-md-3">
-                    <div class="card harga">
-                        <div class="card-body">
-                            <h3 class="card-title text-center fw-bold">Website</h3>
-                            <h4 class="card-subtitle text-center fw-bold fs-2">Rp 3.000.000</h4>
-                            <hr class="opacity-100 mb-5 mt-0" style="border: 1px solid black;">
-                            <ul class="card-text mb-5">
-                                <li>Desain Responsive & Profesional</li>
-                                <li>Domain & hosting gratis 6 bulan</li>
-                                <li>Optimasi SEO dasar</li>
-                                <li>Sistem manajemen konten yang mudah</li>
-                                <li>Gratis konsultasi awal dan setup dasar</li>
-                            </ul>
-                            <div class="text-center">
-                                <a class="btn btn-primary w-75 rounded fw-bold" href="">3.000.000</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card harga">
-                        <div class="card-body">
-                            <h3 class="card-title text-center fw-bold">Website</h3>
-                            <h4 class="card-subtitle text-center fw-bold fs-2">Rp 3.000.000</h4>
-                            <hr class="opacity-100 mb-5 mt-0" style="border: 1px solid black;">
-                            <ul class="card-text mb-5">
-                                <li>Desain Responsive & Profesional</li>
-                                <li>Domain & hosting gratis 6 bulan</li>
-                                <li>Optimasi SEO dasar</li>
-                                <li>Sistem manajemen konten yang mudah</li>
-                                <li>Gratis konsultasi awal dan setup dasar</li>
-                            </ul>
-                            <div class="text-center">
-                                <a class="btn btn-primary w-75 rounded fw-bold" href="">3.000.000</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card harga">
-                        <div class="card-body">
-                            <h3 class="card-title text-center fw-bold">Website</h3>
-                            <h4 class="card-subtitle text-center fw-bold fs-2">Rp 3.000.000</h4>
-                            <hr class="opacity-100 mb-5 mt-0" style="border: 1px solid black;">
-                            <ul class="card-text mb-5">
-                                <li>Desain Responsive & Profesional</li>
-                                <li>Domain & hosting gratis 6 bulan</li>
-                                <li>Optimasi SEO dasar</li>
-                                <li>Sistem manajemen konten yang mudah</li>
-                                <li>Gratis konsultasi awal dan setup dasar</li>
-                            </ul>
-                            <div class="text-center">
-                                <a class="btn btn-primary w-75 rounded fw-bold" href="">3.000.000</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card harga">
-                        <div class="card-body">
-                            <h3 class="card-title text-center fw-bold">Website</h3>
-                            <h4 class="card-subtitle text-center fw-bold fs-2">Rp 3.000.000</h4>
-                            <hr class="opacity-100 mb-5 mt-0" style="border: 1px solid black;">
-                            <ul class="card-text mb-5">
-                                <li>Desain Responsive & Profesional</li>
-                                <li>Domain & hosting gratis 6 bulan</li>
-                                <li>Optimasi SEO dasar</li>
-                                <li>Sistem manajemen konten yang mudah</li>
-                                <li>Gratis konsultasi awal dan setup dasar</li>
-                            </ul>
-                            <div class="text-center">
-                                <a class="btn btn-primary w-75 rounded fw-bold" href="">3.000.000</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
+                <h1 class="neo-title neo-text-dark fw-bold">Website dan Aplikasi Profesional untuk Kebutuhan Bisnis Anda</h1>
 
-     <section class="mt-5 border border-info bg-primary bg-opacity-25">
-        <div class="container-fluid p-5">
-            <div class="row text-center">
-                <div class="col-md-12 mt-5">
-                    <h2 class="fs-5">Mulai proyek digital Anda sekarang dan rasakan solusi profesional dari NeoTech</h2>
-                    <a class="btn neotech" href="">Hubungi Kami Sekarang</a>
+                <p class="fw-bold">Transformasikan ide bisnis Anda menjadi website dan aplikasi yang fongsional dan mudah digunakan</p>
+                <div class="hero-cta">
+                  <a href="" class="btn neo-cta">Hubungi Kami</a>
                 </div>
+              </div>
             </div>
+            <div class="col-md-6">
+              <div class="hero-image" data-aos="fade-left">
+                <img src="img/image 1.webp" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
         </div>
-     </section>
+        <div class="deco-c"></div>
+        <div class="deco-ss"></div>
+        <div class="deco-sb"></div>
+        <div class="deco-l"></div>
+        <div class="deco-ll"></div>
+      </section>
+
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 abt">
+              <span class="abt-badge" data-aos="fade-right" data-aos-delay="100">Tentang Kami</span>
+              <div class="abt-neo" data-aos="zoom-in" data-aos-delay="200">
+                <h2 class="abt-title">NeoTech</h2>
+                <p class="abt-text">
+                  Neotech adalah penyedia layanan digital profesional yang fokus membantu bisnis berkembang melalui website, aplikasi, dan solusi teknologi lainnya. Kami menghadirkan layanan berkualitas, efisien, dan disesuaikan dengan
+                  kebutuhan setiap klien
+                </p>
+                <div class="abt-btn">
+                  <a href="" class="abt-btn">Hubungi Kami</a>
+                </div>
+              </div>
+              <div class="abt-neo2" data-aos="zoom-in" data-aos-delay="300">
+                <h3 class="abt-title2">Mengapa Harus NeoTech?</h3>
+                <p>NeoTech tidak hanya menciptakan website dan aplikasi, tetapi menghadirkan solusi digital yang dirancang untuk mendorong pertumbuhan bisnis Anda secara efisien dan modern.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="img-abt">
+                <img src="img/image2.webp" alt="" class="img-fluid img-neo d-block mx-auto" data-aos="zoom-in" data-aos-delay="200" />
+                <img src="img/image3.webp" alt="" class="img-fluid img-neo2" data-aos="fade-up" data-aos-delay="300" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container" data-aos="zoom-in" data-aos-delay="200">
+          <h2 class="kgl-title" data-aos="fade-down" data-aos-delay="200">Keunggulan NeoTech</h2>
+          <div class="keunggulan">
+            <!-- Kolom Kiri -->
+            <div class="kolom-kiri">
+              <div class="k1 kgl" data-aos="fade-right" data-aos-delay="200">
+                <h3>Meningkatkan Efisiensi Bisnis</h3>
+                <p>Website dan aplikasi yang kami buat membantu operasional lebih cepat dan mudah.</p>
+              </div>
+              <div class="k2 kgl">
+                <h3>Hemat Waktu dan Biaya</h3>
+                <p>Sistem yang terintegrasi mengurangi pekerjaan manual dan biaya operasional.</p>
+              </div>
+            </div>
+
+            <!-- Kolom Tengah -->
+            <div class="kolom-tengah">
+              <div class="img-org">
+                <img src="img/image 4.webp" alt="" class="img-fluid" />
+              </div>
+            </div>
+
+            <!-- Kolom Kanan -->
+            <div class="kolom-kanan">
+              <div class="k3 kgl" data-aos="fade-left" data-aos-delay="200">
+                <h3>Meningkatkan Visibiltas Online</h3>
+                <p>Solusi digital kami membuat bisnis Anda lebih mudah ditemukan oleh calon pelanggan.</p>
+              </div>
+              <div class="k4 kgl">
+                <h3>Solusi yang Sesuai Kebutuhan</h3>
+                <p>Layanan disesuaikan dengan jenis bisnis dan target pasar Anda.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="pdk-title">Produk</h2>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-3">
+            <div class="card neo-bg-dark pdk-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card-body">
+                <h3 class="card-title text-center">Website</h3>
+                <div class="pdk-ikon"><i class="bi bi-globe2"></i></div>
+                <div class="cek">
+                  <a href="" class="btn neo-text-dark fw-bold cek-btn">Cek</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card neo-bg-dark pdk-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="card-body">
+                <h3 class="card-title text-center">Aplikasi</h3>
+                <div class="pdk-ikon"><i class="bi bi-android2"></i></div>
+                <div class="cek">
+                  <a href="" class="btn neo-text-dark fw-bold cek-btn">Cek</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card neo-bg-dark pdk-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="card-body">
+                <h3 class="card-title text-center">Desain</h3>
+                <div class="pdk-ikon"><i class="bi bi-brush-fill"></i></div>
+                <div class="cek">
+                  <a href="" class="btn neo-text-dark fw-bold cek-btn">Cek</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card neo-bg-dark pdk-card" data-aos="zoom-in" data-aos-delay="500">
+              <div class="card-body">
+                <h3 class="card-title text-center">SEO</h3>
+                <div class="pdk-ikon"><i class="bi bi-search"></i></div>
+                <div class="cek">
+                  <a href="" class="btn neo-text-dark fw-bold cek-btn">Cek</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cara-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="cara" data-aos="fade-right" data-aos-delay="100">
+                <h3>Konsultasi & Perencanaan</h3>
+                <p>Kami memulai dengan memahami kebutuhan bisnismu, menentukan tujuan, serta menyusun rencana terbaik untuk proyek digitalmu.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="cara" data-aos="fade-right" data-aos-delay="300">
+                <h3>Desain & Persetujuan Konsep</h3>
+                <p>Tim kami membuat desain sesuai identitas dan preferensimu. Kamu dapat meninjau dan memberikan masukan hingga hasil sesuai harapan.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="cara" data-aos="fade-right" data-aos-delay="500">
+                <h3>Pengembangan Proyek</h3>
+                <p>Website, aplikasi, atau sistem digital dibangun oleh tim NeoTech dengan fokus pada kualitas, kecepatan, dan keamanan.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="cara" data-aos="fade-right" data-aos-delay="700">
+                <h3>Peluncuran & Dukungan</h3>
+                <p>Setelah proses uji selesai, proyek diluncurkan secara resmi. NeoTech tetap mendampingi dengan layanan dukungan dan pemeliharaan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-fluid py-5">
+          <h2 class="text-center mb-5">Harga</h2>
+
+          <div class="hrg-sec">
+            <!-- Paket Website -->
+            <div class="hrg-card hrg-1" data-aos="fade-right" data-aos-delay="200">
+              <div class="card-body">
+                <h3 class="card-title text-center">Website</h3>
+                <h4 class="card-subtitle text-center">Rp 3.000.000</h4>
+                <hr />
+                <ul class="card-text">
+                  <li>Domain & hosting gratis selama 1 tahun</li>
+                  <li>Desain profesional & responsif (mobile friendly)</li>
+                  <li>Optimasi SEO dasar</li>
+                  <li>Integrasi WhatsApp & media sosial</li>
+                  <li>Dukungan & perawatan ringan selama 1 bulan</li>
+                </ul>
+              </div>
+              <div class="t-harga">
+                <a href="#">Rp 3.000.000</a>
+              </div>
+            </div>
+
+            <!-- Paket Aplikasi Mobile -->
+            <div class="hrg-card hrg-2" data-aos="fade-right" data-aos-delay="100">
+              <div class="card-body">
+                <h3 class="card-title text-center">Aplikasi Mobile</h3>
+                <h4 class="card-subtitle text-center">Rp 10.000.000</h4>
+                <hr />
+                <ul class="card-text">
+                  <li>Pengembangan untuk Android & iOS</li>
+                  <li>Desain UI/UX eksklusif</li>
+                  <li>Integrasi database & API</li>
+                  <li>Dashboard admin (opsional)</li>
+                  <li>Revisi desain hingga 2x</li>
+                  <li>Garansi bug fix selama 3 bulan</li>
+                </ul>
+              </div>
+              <div class="t-harga">
+                <a href="#">Rp 10.000.000</a>
+              </div>
+            </div>
+
+            <!-- Paket Aplikasi Kasir -->
+            <div class="hrg-card hrg-3" data-aos="fade-left" data-aos-delay="100">
+              <div class="card-body">
+                <h3 class="card-title text-center">Aplikasi Kasir (POS)</h3>
+                <h4 class="card-subtitle text-center">Rp 5.000.000</h4>
+                <hr />
+                <ul class="card-text">
+                  <li>Sistem pencatatan transaksi otomatis</li>
+                  <li>Manajemen stok & laporan penjualan</li>
+                  <li>Akses multi pengguna (kasir & admin)</li>
+                  <li>Panduan & pelatihan penggunaan</li>
+                  <li>Dukungan teknis selama 3 bulan</li>
+                </ul>
+              </div>
+              <div class="t-harga">
+                <a href="#">Rp 5.000.000</a>
+              </div>
+            </div>
+
+            <!-- Paket Desain UI/UX -->
+            <div class="hrg-card hrg-4" data-aos="fade-left" data-aos-delay="200">
+              <div class="card-body">
+                <h3 class="card-title text-center">Desain UI/UX</h3>
+                <h4 class="card-subtitle text-center">Rp 1.500.000</h4>
+                <hr />
+                <ul class="card-text">
+                  <li>Riset kebutuhan & analisis pengguna</li>
+                  <li>Pembuatan wireframe & prototype interaktif</li>
+                  <li>Desain untuk aplikasi / website</li>
+                  <li>Revisi hingga hasil sesuai keinginan</li>
+                  <li>Konsultasi gratis hingga proyek selesai</li>
+                </ul>
+              </div>
+              <div class="t-harga">
+                <a href="#">Rp 1.500.000</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hub" data-aos="zoom-out" data-aos-delay="200">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="text-center">Mulai proyek digital Anda sekarang dan rasakan solusi profesional dari NeoTech</h2>
+              <div class="t-hub text-center">
+                <a href="" class="btn neo-bg-dark">Hubungi Kami Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container" data-aos="fade-up" data-aos-delay="200">
+          <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Feel free to get in touch with us. We’ll respond as soon as possible.</p>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form action="#" method="post" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Your Email" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="subject" placeholder="Subject" required />
+              </div>
+
+              <div class="form-group">
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+              </div>
+
+              <div class="form-group form-submit">
+                <button type="submit" class="btn-submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="neo-footer neo-bg-light" data-aos="fade">
+      <div class="container">
+        <div class="row">
+          <!-- Tentang NeoTech -->
+          <div class="col-md-3">
+            <h3>NeoTech</h3>
+            <p>Jasa pembuatan website dan aplikasi paling keren. Kami menyediakan solusi digital terbaik untuk bisnis Anda.</p>
+            <h4>Alamat</h4>
+            <p>Jl. Diponegoro No.4</p>
+            <h4>Phone</h4>
+            <p>+62 895 123 456</p>
+          </div>
+
+          <!-- Produk & Layanan -->
+          <div class="col-md-3">
+            <h4>Produk & Layanan</h4>
+            <ul class="footer-links">
+              <li><a href="#">Website Company Profile</a></li>
+              <li><a href="#">Toko Online / E-commerce</a></li>
+              <li><a href="#">Aplikasi Mobile Android & iOS</a></li>
+              <li><a href="#">Aplikasi Kasir (POS)</a></li>
+              <li><a href="#">Desain UI/UX</a></li>
+              <li><a href="#">SEO & Marketing Digital</a></li>
+              <li><a href="#">Maintenance & Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Link Cepat / Informasi -->
+          <div class="col-md-3">
+            <h4>Informasi</h4>
+            <ul class="footer-links">
+              <li><a href="#">About NeoTech</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Harga Paket</a></li>
+              <li><a href="#">Blog & Artikel</a></li>
+              <li><a href="#">Testimoni Klien</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+
+          <!-- Sosial Media / Newsletter -->
+          <div class="col-md-3">
+            <h4>Ikuti Kami</h4>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <h4>Newsletter</h4>
+            <p>Dapatkan update terbaru tentang layanan dan promo NeoTech.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Email Anda" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom text-center">
+          <p>&copy; 2025 NeoTech. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
